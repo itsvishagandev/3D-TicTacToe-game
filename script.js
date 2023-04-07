@@ -51,7 +51,7 @@ const userProfile = loader.load('./assets/textures/userProfile.png');
 const botProfile = loader.load('./assets/textures/botProfile.png');
 // Result
 const wonstricker = loader.load('./assets/textures/wonStricker.png');
-const drawstricker = loader.load('./assets/textures/drawstricker.png');
+const drawstricker = loader.load('./assets/textures/drawStricker.png');
 const retryBtn = loader.load('./assets/textures/retryBtn.png');
 
 
@@ -372,6 +372,7 @@ const handleNavigation = (status) => {
         case "gameReset" :
             boardPlain.material.map = boardImage;
             retryBtnMesh.scale.set(0,0,0);
+            player = "0";
             playerGroup.children = [];
             boxMatrix = [
                 [1,2,3],
